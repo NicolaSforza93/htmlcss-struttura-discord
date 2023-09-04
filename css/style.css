@@ -3,3 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col.link {
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.col.logo, .col.login {
+    flex-basis: 120px;
+}
+
+.col.login {
+    text-align: right;
+}
+
+
+
+/* DEBUG */
+
+.debug .container {
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #add8e6;
+}
+
+.debug .row {
+    padding: 5px;
+    background-color: #add8e6;
+}
+
+.debug .col {
+    border: 1px dashed black;
+    padding: 3px;
+    background-color: rgba(255, 166, 0, 0.886);
+}
