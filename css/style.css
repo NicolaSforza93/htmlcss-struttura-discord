@@ -48,14 +48,35 @@ body {
     min-width: 180px;
 }
 
+.row.four div:first-child {
+    min-height: 200px;
+    min-width: 300px;
+    order: 1;
+}
+
+.row.four div:last-child {
+    min-height: 200px;
+    min-width: 180px;
+}
+
+.row.five div:first-child {
+    min-height: 200px;
+    min-width: 300px;
+}
+
+.row.five div:last-child {
+    min-height: 200px;
+    min-width: 180px;
+}
+
+.col-6 {
+    min-height: 290px;
+    min-width: 480px;
+}
+
 
 
 /* DEBUG */
-
-.debug .container {
-    padding: 5px;
-    border: 1px solid black;
-}
 
 .debug .row {
     padding: 5px;
@@ -85,11 +106,15 @@ body {
     background-color: #00008b;
 }
 
-.debug .row.three {
+.debug .row.three, .row.five {
     background-color: white;
 }
 
-.debug .col-3 {
+.debug .row.four {
+    background-color: #d3d3d3;
+}
+
+.debug .col-3, .col-4, .col-5, .col-6 {
     border: 1px dashed black;
 }
 
@@ -99,4 +124,28 @@ body {
 
 .debug .row.three div:last-child {
     background-color: #ffc0cb;
+} 
+
+.debug .row.four div:first-child {
+    background-color: #1e90ff;
+}
+
+.debug .row.four div:last-child {
+    background-color: #ffc0cb;
+}
+
+.debug .row.five div:first-child {
+    background-color: #1e90ff;
+}
+
+.debug .row.five div:last-child {
+    background-color: #ffc0cb;
+}
+
+.debug .row.six {
+    background-color: #d3d3d3;
+}
+
+.debug .col-6 {
+    background-color: #228b22;
 }
