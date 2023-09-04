@@ -33,6 +33,21 @@ body {
     text-align: right;
 }
 
+.col-2 {
+    min-height: 160px;
+    min-width: 400px;
+}
+
+.row.three div:first-child {
+    min-height: 200px;
+    min-width: 300px;
+}
+
+.row.three div:last-child {
+    min-height: 200px;
+    min-width: 180px;
+}
+
 
 
 /* DEBUG */
@@ -40,7 +55,6 @@ body {
 .debug .container {
     padding: 5px;
     border: 1px solid black;
-    background-color: #add8e6;
 }
 
 .debug .row {
@@ -52,4 +66,37 @@ body {
     border: 1px dashed black;
     padding: 3px;
     background-color: rgba(255, 166, 0, 0.886);
+}
+
+.debug .main-content {
+    min-height: 800px;
+}
+
+.debug .main-content .row {
+    padding: 15px;
+}
+
+.debug .col-2 {
+    border: 1px dashed black;
+    background-color: #ee82ee;
+}
+
+.debug .row.two {
+    background-color: #00008b;
+}
+
+.debug .row.three {
+    background-color: white;
+}
+
+.debug .col-3 {
+    border: 1px dashed black;
+}
+
+.debug .row.three div:first-child {
+    background-color: #1e90ff;
+}
+
+.debug .row.three div:last-child {
+    background-color: #ffc0cb;
 }
