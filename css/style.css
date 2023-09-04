@@ -20,6 +20,8 @@ body {
     flex-wrap: wrap;
 }
 
+/* Header */
+
 .col.link {
     flex-basis: 300px;
     text-align: center;
@@ -33,10 +35,20 @@ body {
     text-align: right;
 }
 
+/* Main */
+
+main {
+    flex-grow: 1;
+}
+
+/* Prima sezione */
+
 .col-2 {
     min-height: 160px;
     min-width: 400px;
 }
+
+/* Seconda sezione */
 
 .row.three div:first-child {
     min-height: 200px;
@@ -47,6 +59,8 @@ body {
     min-height: 200px;
     min-width: 180px;
 }
+
+/* Terza sezione */
 
 .row.four div:first-child {
     min-height: 200px;
@@ -59,6 +73,8 @@ body {
     min-width: 180px;
 }
 
+/* Quarta sezione  */
+
 .row.five div:first-child {
     min-height: 200px;
     min-width: 300px;
@@ -69,11 +85,35 @@ body {
     min-width: 180px;
 }
 
+/* Quinta sezione  */
+
 .col-6 {
     min-height: 290px;
     min-width: 480px;
 }
 
+/* Footer */
+
+.col-7 {
+   min-height: 190px;
+   min-width: 70px;
+}
+
+.row.seven div:first-child {
+    min-width: 130px;
+}
+
+.col-8 {
+    min-height: 50px;
+    min-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .button {
+    min-height: 20px;
+}
 
 
 /* DEBUG */
@@ -148,4 +188,40 @@ body {
 
 .debug .col-6 {
     background-color: #228b22;
+}
+
+.debug .row.seven, .row.eight {
+    background-color: #23272ae2;
+}
+
+.debug .row.seven {
+    padding-bottom: 20px;
+}
+
+.debug .col-7 {
+    background-color: #20b2aa;
+    border: 1px dashed white;
+}
+
+.debug .row.seven div:first-child {
+    border: 1px dashed rgba(0, 0, 0, 0.808);
+    background-color: #f08080;
+}
+
+.debug .row.eight {
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+.debug .col-8 {
+    background-color: #7fffd4;
+}
+
+.debug .col-8 > div {
+    background-color: #ffb6c1;
+    border: 1px dashed black;
+}
+
+.debug .logo, .button {
+    padding: 3px;
 }
